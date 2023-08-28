@@ -18,19 +18,5 @@ const jsonString = `
 }`;
 
 const data = JSON.parse(jsonString)
-const specialistNodes = data.list;
-const specialists = [];
 
-specialistNodes.forEach(specialistNode => {
-    specialists.push({
-        name: specialistNode.name,
-        age: Number(specialistNode.age),
-        prof: specialistNode.prof,
-    })
-})
-
-const result = {
-    list: specialists
-};
-
-console.log(result);
+console.log(data);
